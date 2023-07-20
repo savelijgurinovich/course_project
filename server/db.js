@@ -1,6 +1,6 @@
 const {Sequelize} = require('sequelize');
 module.exports = new Sequelize(
-    'course_project',
+    'fullstack_project',
     'root',
     'saveliy147',
     {
