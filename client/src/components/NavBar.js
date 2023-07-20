@@ -17,7 +17,7 @@ const NavBar = observer(() => {
                     {user.isAuth ?
                         <Nav className="me-auto my-2 my-lg-2" style={{ maxHeight: '100px', marginLeft: '10px' }} navbarScroll>
                         <Button variant={"outline-dark"} onClick={() => user.setIsAuth(false)}>LOGOUT</Button>
-                        <Nav.Link href="/" style={{color: "black", marginLeft: '20px'}}>Home page</Nav.Link>
+                        <Nav.Link href="/" style={{color: "black", marginLeft: '20px'}}>Homepage</Nav.Link>
                         <Nav.Link href="/collection" style={{color: "black", marginLeft: '20px'}}>My collections</Nav.Link>
                         </Nav>
                         :
