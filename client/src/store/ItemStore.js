@@ -2,8 +2,10 @@ import {makeAutoObservable} from "mobx";
 
 export default class ItemStore {
     constructor() {
+
         this._items = [
-            {id: 1, name: 'addad', userId: 1, collectionId: 1, description: 'ada', tags: 'ada', image: 'ada.jpg'}
+            {id: 1, name: 'addad', userId: 1, collectionId: 1, description: 'ada', tags: 'ada', image: 'ada.jpg'},
+            {id: 2, name: 'addad', userId: 2, collectionId: 2, description: 'ada', tags: 'ada', image: 'ada.jpg'}
         ]
         this._comments = [
             {id: 1, userId: 2, itemId: 1, text: 'adad'}
@@ -20,4 +22,8 @@ export default class ItemStore {
     get comments() {
         return this._comments
     }
+    get items() {
+        return this._items
+    }
+
 }

@@ -1,10 +1,18 @@
 import React from 'react';
+import {Col, Row} from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import UserCollectionList from "../components/UserCollectionList";
 
 const UserPage = () => {
     return (
-        <div>
-            USERPAGE
-        </div>
+        <Container>
+            <Row className="mt-3">
+                <Col md={12}>
+                    <UserCollectionList/>
+                </Col>
+            </Row>
+
+        </Container>
     );
 };
 

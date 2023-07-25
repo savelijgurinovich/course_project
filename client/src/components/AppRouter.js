@@ -3,14 +3,13 @@ import Admin from "../pages/Admin";
 import Auth from "../pages/Auth";
 import Main from "../pages/Main";
 import CollectionPage from "../pages/CollectionPage";
-import ItemPage from "../pages/ItemPage";
 import UserPage from "../pages/UserPage";
 import NotFoundPage from "../pages/NotFoundPage";
+import ItemPage from "../pages/ItemPage";
 import {useContext} from "react";
 import {Context} from "../index";
 const AppRouter = () => {
     const {user} = useContext(Context)
-    console.log(user)
     return (
         <Routes>
             <Route path="/" element={<Main />}/>
